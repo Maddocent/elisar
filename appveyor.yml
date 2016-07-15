@@ -12,7 +12,9 @@ install:
 
 # Adapt as necessary starting from here
 
+#https://www.bountysource.com/issues/33142328-fix-appveyor
 build_script:
+  - travis-tool.sh install_github rstats-db/DBI
   - travis-tool.sh install_deps
 
 test_script:
