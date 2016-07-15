@@ -19,6 +19,7 @@ build_script:
   - travis-tool.sh install_r Rcpp
   - travis-tool.sh install_r tibble
   - travis-tool.sh install_r plyr
+  - travis-tool.sh install_r psych
   - travis-tool.sh install_deps
 
 test_script:
