@@ -14,12 +14,7 @@ install:
 
 #https://www.bountysource.com/issues/33142328-fix-appveyor
 build_script:
-  - travis-tool.sh install_github rstats-db/DBI
-  - travis-tool.sh install_r assertthat
-  - travis-tool.sh install_r Rcpp
-  - travis-tool.sh install_r tibble
-  - travis-tool.sh install_r plyr
-  - travis-tool.sh install_r psych
+  - travis-tool.sh install_github hadley/devtools
   - travis-tool.sh install_deps
 
 test_script:
